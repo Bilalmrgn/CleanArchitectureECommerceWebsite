@@ -23,7 +23,7 @@ namespace ECommerceAPI.Persistence.Repositories
         public DbSet<T> Table => _context.Set<T>();
 
         //1 tane kayıt ekle
-        public async Task<bool> CreateAsync(T model)
+        public async Task<bool> AddAsync(T model)
         {
             EntityEntry<T> entityEntry = await Table.AddAsync(model);
 

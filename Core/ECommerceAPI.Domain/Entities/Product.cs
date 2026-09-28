@@ -11,7 +11,7 @@ namespace ECommerceAPI.Domain.Entities
     {
         public string ProductName { get; set; }
         public int Stock { get; set; }
-        public long Price { get; set; }
+        public float Price { get; set; }
 
         //product ve order arasında many to many ilişkisi vardır
         public ICollection<Order> Orders { get; set; }

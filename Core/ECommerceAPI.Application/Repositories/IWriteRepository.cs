@@ -11,7 +11,7 @@ namespace ECommerceAPI.Application.Repositories
     public interface IWriteRepository<T> : IRepository<T> where T : BaseEntity
     {
         //create
-        Task<bool> CreateAsync(T model);
+        Task<bool> AddAsync(T model);
 
         //koleksyon olarak create
         Task<bool> CreateAsync(List<T> models);
